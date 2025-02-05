@@ -1,0 +1,21 @@
+'''
+    Progamador...: (C) Pedro Sousa
+    Data.........: 03/02/2025
+    Observações..: Cálculo de média.
+'''
+
+def calcularMedia(notaSDAC = 0, notaCD = 0, notaELF= 0):
+   if((notaSDAC >= 0) and (notaSDAC <= 20) and (notaCD >= 0) and (notaCD <= 20) and (notaELF >= 0) and (notaELF <= 20)):
+    return (notaSDAC + notaCD + notaELF) / 3
+   else:
+        return -1
+# Input
+notaSDAC = float(input("introduza a nota de SDAC:"))
+notaCD   = float(input("introduza a nota de CD:"))
+notaELf  = float(input("introduza a nota de ELF:"))
+
+# Processamento
+media = calcularMedia(notaSDAC, notaCD, notaELf)
+
+# Output
+print(f"A sua média é {media}.")
